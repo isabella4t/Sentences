@@ -28,6 +28,8 @@ public class TruthAssignment {
         return theREP.get(lo);
     }
 
+
+    //oh goodness I need to make a truthtable
     public void Arraylisting(){
         ArrayList<String> pcs = new ArrayList<String>();
         pcs.add("p");
