@@ -1,3 +1,8 @@
+import sun.awt.im.SimpleInputMethodWindow;
+
+import java.security.BasicPermission;
+import java.util.ArrayList;
+
 public class Main {
 
     /*
@@ -29,39 +34,38 @@ RELATIONSHIPs
 
   We can use conjunction and disjunction to
 
+What are sets
+
+union : {a,b}U{b,c} = {a,b,c}
+intersection : {a,b} N {b,c,} = {a}
+
+The task:
+make a truth column for q and p
+see if entails each other
+
+make another thing that asks if (p && !q) is unsatisfiable
+
 
 
      */
 
     public static void main(String[] args) {
+        testTruthAssignment();
 
-        String input = "q";
-        boolean checkq = isLogicalSimple(input);
-        System.out.println(checkq);
+        ArrayList<String> pcs = new ArrayList<String>();
+        pcs.add("p");
+        pcs.add("q");
 
+        System.out.println(pcs.size());
 
     }
 
-    public static boolean isLogicalSimple(String input){
-        char[] inp = input.toCharArray();
+    public static void testTruthAssignment(){
 
-        if(inp.length>1) return false;
-
-        if ((inp[0]<='a')&&(inp[0]>='z')){
-            //this is broken for some reason
-            return true;
-        }
-      //  System.out.println(inp[0]);
-        return false;
     }
 
-    public static String SplitString(String input){
-        char[] inp = input.toCharArray();
-        //inp =
-        return "1";
+    public static void doesitentail(){
+
     }
 
-    public static String WhatRelationship(int[] truth1, int[] truth2){
-        return "e";
-    }
 }
