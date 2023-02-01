@@ -57,6 +57,15 @@ public class TruthAssignment {
         return (1<<p)&k;
     }
 
+    public int[][] truthtable(){
+        int rows = 1;
+        for(int i = 0; i<theREP.size();i++){
+            rows *= i+1;
+        }
+        int[][] green = new int[rows][theREP.size()];
+        for(int p = 0 ; )
+    }
+
 
 
     // (a | ~b | c) & (~a | b | c)
